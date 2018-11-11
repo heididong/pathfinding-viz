@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset='utf-8'>
+<style>
+  .nodes circle {
+    pointer-events: all;
+    stroke: none;
+    stroke-width: 40px;
+  }
+</style>
+<svg width='960' height='600'>
+  <g class='links'></g>
+  <g class='nodes'></g>
+</svg>
+<script src='https://d3js.org/d3.v4.min.js'></script>
+<script src='graphs/simple.js'></script>
+<script src='viz.js'></script>
+<script src='bfs.js'> </script>
+<script>
+  searcher.init(graph, 0, 3);
+  searcher.step(graph);
+  update(graph);
+</script>
